@@ -1,0 +1,39 @@
+<div class="notice_write_emend_wrap">
+  <p>게시판 글 작성</p>
+  <div class="notice_write_emend">
+    <form method="post" action="/updates" id="notice_write_emend_form">
+      <div class="write_emend_list">
+        <ul>
+          <li>
+            <input type="hidden" name="emend_num" id="write_list_emend_num" value="<%= row.num %>">
+          </li>
+          <li>
+            <label for="emend_name">작성자</label>
+            <input type="text" name="emend_name" id="write_list_emend_name" value="<%= row.wirte %>">
+          </li>
+          <li>
+            <label for="emend_day">작성일</label>
+            <input type="text" name="emend_day" id="write_list_emend_day" value="<%= row.Date %>">
+          </li>
+          <li class="write_list_emend_title_wrap">
+            <label for="emend_title">제목</label>
+            <input type="text" name="emend_title" id="write_list_emend_title" value="<%= row.title %>">
+          </li>
+        </ul>
+      </div>
+      <div class="write_emend_memo">
+        <!--  cols="30" rows="5" -->
+        <textarea name="emend_memo_cont"><%= row.cont %></textarea>
+      </div>
+      <div class="write_emend_file_wrap">
+        <label for="emend_file">첨부파일</label>
+        <input type="file" name="emend_file" id="write_emend_file">
+      </div>
+      <div class="notice_emend_write_btn"> 
+        <input type="submit" value="확인" id="notice_write_emend_check">
+        <input type="reset" value="취소" id="notice_write_emend_reset" onclick="javascript:location.href='/notice_list'">
+      </div>
+    </form>
+  </div>
+</div>
+<div class="b140"></div>

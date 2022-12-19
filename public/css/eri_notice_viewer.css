@@ -1,0 +1,121 @@
+/* 노티스 뷰어 워랩 */
+.notice_viewer_wrap{
+   width: 100%;
+   max-width: 1480px;
+   margin: 0 auto;
+   position: relative;
+   top:80px; left:0;
+   box-sizing: border-box;
+}
+.notice_viewer_wrap>h2{
+   text-align: center;
+   margin: 60px 0;
+   padding-bottom: 0px;
+}
+
+/* 노티스뷰어 */
+.notice_viewer{
+   padding: 0 30px;
+   box-sizing: border-box;
+}
+/* 노티스뷰어 제목 */
+.notice_viewer_title h3{
+   font-size: 18px;
+   line-height: 50px;
+}
+/* 노티스뷰어 정보 */
+.notice_viewer_info{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-top: 1px solid;
+   border-bottom: 1px solid;
+   box-sizing: border-box;
+   line-height: 30px;
+}
+.viewer_info_left{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.info_date{
+   color: #777;
+   margin-left: 30px;
+}
+.viewer_info_right{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.info_num{
+   margin-left: 30px;
+}
+/* 노티스라이트 내용 */
+.notice_viewer_cont{
+   padding: 30px 0;
+}
+/* 노티스 리스트 버튼 */
+.notice_viewer_btn{
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+.notice_viewer_btn>input{
+   width: 80px;
+   height: 40px;
+   text-align: center;
+   cursor: pointer;
+   font-size: 18px;
+   border: 0;
+   margin-top: 50px;
+}
+#notice_list_btn{
+   background-color: #fff;
+   color: #A58E74;
+   border: 1px solid #A58E74;
+}
+#notice_write_btn{
+   background-color: #A58E74;
+   color: #fff;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+#notice_delete_btn{
+   background-color: #fff;
+   color: #A58E74;
+   border: 1px solid #A58E74;
+}
+/* 미디어쿼리 */
+@media (max-width:1400px) {
+   /* 노티스 뷰어 워랩 */
+   .notice_viewer_wrap{
+     padding-right: 10px;
+     padding-left: 10px;
+     box-sizing: border-box;
+   }
+ }
+@media (max-width:1240px){
+   /* 노티스 뷰어 워랩 */
+   .notice_viewer_wrap{
+      top:68px;
+   }
+   .notice_viewer_wrap>h2{
+      margin: 30px 0;
+   }
+   /* 노티스 리스트 버튼 */
+   .notice_viewer_btn>input{
+      margin-top: 30px;
+   }
+ }
+ @media (max-width:1000px){
+   /* 노티스 리스트 버튼 */
+   .notice_viewer_btn>input{
+      font-size: 15px;
+   }
+ }
+ @media (max-width:769px){
+   /* 노티스 뷰어 워랩 */
+   .notice_viewer_wrap{
+      top:48px;
+   }
+ }

@@ -1,0 +1,102 @@
+/* 브랜드 워랩 */
+.eri_brand_wrap{
+   width: 100%;
+   max-width: 1480px;
+   margin: 0 auto;
+   position: relative;
+   top:80px; left:0;
+   /* border: 1px solid; */
+   box-sizing: border-box;
+}
+.eri_brand_wrap>h2{
+   text-align: center;
+   margin: 60px 0;
+   padding-bottom: 0px;
+   /* background-color: skyblue; */
+}
+
+/* 브랜드 */
+.eri_brands{
+   /* border: 1px solid red; */
+   /* background-color: salmon; */
+   padding: 0 30px;
+   box-sizing: border-box;
+}
+/* 브랜드 이미지 */
+.brand_imgs{
+  width: 100%;
+  padding-top: 30%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.brand_img1{
+  background-image: url(../img/brand_banner1.png);
+}
+.brand_img2{
+  background-image: url(../img/brand_banner2.png);
+}
+.brand_img3{
+  background-image: url(../img/brand_banner3.png);
+}
+/* 브랜드 텍스트 */
+.brand_text{
+  text-align: center;
+  padding: 50px 0 120px;
+}
+.brand_text>h4{
+  font-size: 26px;
+  padding-bottom: 50px;
+}
+/* 미디어쿼리 */
+@media (max-width:1400px) {
+    /* 브랜드 워랩 */
+   .eri_brand_wrap{
+     padding-right: 10px;
+     padding-left: 10px;
+     box-sizing: border-box;
+     max-width: 1400px;
+   }
+ }
+@media (max-width:1240px){
+    /* 브랜드 워랩 */
+   .eri_brand_wrap{
+      top:68px;
+      max-width: 1240px;
+   }
+   .eri_brand_wrap>h2{
+      margin: 30px 0;
+   }
+ }
+ /* @media (max-width:1000px){
+
+ } */
+ @media (max-width:769px){
+    /* 브랜드 워랩 */
+   .eri_brand_wrap{
+      top:48px;
+      max-width: 769px;
+   }
+   /* 브랜드 텍스트 */
+    .brand_text{
+      text-align: center;
+      padding: 20px 0 60px;
+    }
+   .brand_text>h4{
+    font-size: 19px;
+    padding-bottom: 20px;
+  }
+  /* 브랜드 이미지 */
+  .brand_imgs{
+    padding-top: 100%;
+  }
+  .brand_img1{
+    background-image: url(../img/brand_mbanner1.png);
+  }
+  .brand_img2{
+    background-image: url(../img/brand_mbanner2.png);
+  }
+  .brand_img3{
+    background-image: url(../img/brand_mbanner3.png);
+  }
+ }

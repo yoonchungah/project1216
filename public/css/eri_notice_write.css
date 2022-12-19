@@ -1,0 +1,129 @@
+/* 노티스 라이트 워랩 */
+.notice_write_wrap{
+   width: 100%;
+   max-width: 1480px;
+   margin: 0 auto;
+   position: relative;
+   top:80px; left:0;
+   /* border: 1px solid; */
+   box-sizing: border-box;
+}
+.notice_write_wrap>p{
+   margin-top:60px;
+   padding-bottom: 0px;
+   font-size: 18px;
+   font-weight: bold;
+   /* background-color: skyblue; */
+}
+/* 작성자,이메일,작성일,조회수,제목 */
+.write_list>ul{
+   padding: 40px 0;
+}
+.write_list>ul>li{
+   border-bottom: 1px solid;
+   box-sizing: border-box;
+   font-size: 18px;
+   line-height: 50px;
+   font-weight: bold;
+}
+.write_list>ul>li>input{
+   border: 1px solid #000;
+   padding: 0;
+   margin: 0;
+   margin-left: 30px;
+   height: 30px;
+   width: 250px;
+}
+
+/* 메모 */
+.write_memo textarea{
+   width: 100%;
+   height: 500px;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* 첨부파일 */
+.write_file_wrap{
+   padding: 30px 0;
+   font-size: 18px;
+   font-weight: bold;
+}
+/* 확인 취소 버튼 */
+.notice_write_btn{
+   text-align: right;
+}
+#notice_write_check{
+   width: 80px;
+   height: 40px;
+   background-color: #A58E74;
+   border: 0;
+   padding: 0;
+   color: #fff;
+   cursor: pointer;
+   font-size: 18px;
+   margin-right: 10px;
+}
+#notice_write_reset{
+   width: 80px;
+   height: 40px;
+   background-color: #fff;
+   border: 1px solid #A58E74;
+   box-sizing: border-box;
+   padding: 0;
+   color: #A58E74;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+
+
+
+
+
+/* 미디어쿼리 */
+@media (max-width:1400px) {
+   /* 노티스 라이트 워랩 */
+   .notice_write_wrap{
+      max-width: 1400px;
+      padding-right: 10px;
+      padding-left: 10px;
+      box-sizing: border-box;
+   }
+ }
+@media (max-width:1240px){
+   /* 노티스 라이트 워랩 */
+   .notice_write_wrap{
+      max-width: 1240px;
+      top:68px;
+   }
+   /* 노티스 라이트 워랩 p*/
+   .notice_write_wrap>p{
+      margin-top:30px;
+   }
+ }
+ @media (max-width:1000px){
+   /* 폰트사이즈 */
+   /* 작성자,이메일,작성일,조회수,제목 */
+   .write_list>ul>li{
+      font-size: 15px;
+   }
+   /* 첨부파일 */
+   .write_file_wrap{
+      font-size: 15px;
+   }
+   /* 확인 취소 버튼 */
+   #notice_write_check{
+      font-size: 15px;
+   }
+   #notice_write_reset{
+      font-size: 15px;
+   }
+ }
+ @media (max-width:769px){
+   /* 노티스 라이트 워랩 */
+   .notice_write_wrap{
+      max-width: 769px;
+      top:48px;
+   }
+ }

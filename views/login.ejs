@@ -1,0 +1,21 @@
+<div class="login_wrap">
+  <h2>LOGIN</h2>
+  <form method="post" action="/writeLogin" id="login_form">
+    <div class="container">
+      <label for="login_id">ID</label>
+      <input type="text" placeholder="아이디를 입력하세요" id="login_id" name="login_id">
+      <label for="login_password">Password</label>
+      <input type="password" placeholder="비밀번호를 입력하세요" id="login_password" name="login_password">
+      <button type="submit" id="login_but">로그인</button>
+      <ul>
+        <li><a href="#">아이디찾기</a></li>
+        <li><a href="#">비밀번호찾기</a></li>
+      </ul>
+      <!-- <p id="alert"> </p> -->
+      <p>아직 회원이 아니신가요?<br>
+        회원가입을 하시면 다양하고 특별한 혜택이 준비되어 있습니다.</p>
+      <button type="button" id="join_but" onclick="location.href='join';">회원가입</button>
+    </div>
+  </form>
+</div>
+<div class="b140"></div>

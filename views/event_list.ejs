@@ -1,0 +1,103 @@
+<div class="event_list_wrap">
+  <h2>EVENT</h2>
+  <ul class="event_tab_list">
+  <!-- 클래스를 똑같이 줘야 한번에 스크립트 값을 줄수있다 
+  onclick: 클릭하면 일어난다 함수 이름() -> 함수호출 -->
+    <li class="event_tab_link event_active" onclick="tabOpen(event,'event_tab1')">진행중인 이벤트</li>
+    <li class="event_tab_link" onclick="tabOpen(event,'event_tab2')">종료된 이벤트</li>
+  </ul>
+    <!-- li 에 들어갈 tabName 매개변수 값과 div의 id 이름이 같아야한다 event_tab1,event_tab2-->
+  <section class="event_tab_wrap">
+    <article id="event_tab1" class="event_tab_cont">
+      <div class="event_figure_wrap">
+        <figure class="event_figure">
+          <a href="#">
+            <div class="event_img event_img1"></div>
+            <figcaption>첫구매 고객을 위한 특급 혜택</figcaption>
+            <span class="date">2021.05.07 - 2023.01.01</span>
+          </a>
+        </figure>
+        <figure class="event_figure">
+          <a href="#">
+            <div class="event_img event_img2"></div>
+            <figcaption>2022 에리제론 어워즈</figcaption>
+            <span class="date">2022.12.01 - 2022.12.31</span>
+          </a>
+        </figure>
+        <figure class="event_figure">
+          <a href="#">
+            <div class="event_img event_img3"></div>
+            <figcaption>에리제론 NFT 100원딜</figcaption>
+            <span class="date">2022.11.01 - 2022.12.31</span>
+          </a>
+        </figure>
+        <figure class="event_figure">
+          <a href="#">
+            <div class="event_img event_img4"></div>
+            <figcaption>에리제론 핫딜!</figcaption>
+            <span class="date">2022.11.11 - 2022.11.20</span>
+          </a>
+        </figure>
+      </div>
+    </article>
+    <article id="event_tab2" class="event_tab_cont">
+      <div class="event_figure_wrap">
+        <figure class="event_figure">
+          <a href="#">
+            <div class="event_img event_img5"></div>
+            <figcaption>에리제론 햄프볼 신제품과 와디즈의 환상적인 만남!</figcaption>
+            <span class="date">2022.10.04 - 2022.10.07</span>
+          </a>
+        </figure>
+        <figure class="event_figure">
+          <a href="#">
+            <div class="event_img event_img6"></div>
+            <figcaption>환경의 날 다운 프로모션</figcaption>
+            <span class="date">2022.09.23 - 2022.09.28</span>
+          </a>
+        </figure>
+        <figure class="event_figure">
+          <a href="#">
+            <div class="event_img event_img7"></div>
+            <figcaption>48H 지구 타임특가</figcaption>
+            <span class="date">2022.09.16 - 2022.09.18</span>
+          </a>
+        </figure>
+        <figure class="event_figure">
+          <a href="#">
+            <div class="event_img event_img8"></div>
+            <figcaption>단 9일간, 전국민 직원가 세일</figcaption>
+            <span class="date">2022.09.5 - 2022.09.13</span>
+          </a>
+        </figure>
+      </div>
+    </article>
+  </section>
+</div>
+
+<form class="event_btn">
+  <input type="button" id="event_list_page_num" value="1"></input>
+  <table>
+      <tbody>
+        <tr>
+          <td>
+              <select name="event_select" id="event_select">
+                <option value="e_title">제목</option>
+                <option value="e_num">번호</option>
+                <option value="e_wriht">작성자</option>
+                <option value="e_day">작성일</option>
+                <option value="e_view">조회수</option>
+              </select>
+          </td>
+          <td>
+              <input type="text">
+          </td>
+          <td>
+              <input type="button" value="검색" id="event_search">
+          </td>
+        </tr>
+      </tbody>
+  </table>
+</form>
+<div class="b140"></div>
+<script src="js/event_list.js"></script>

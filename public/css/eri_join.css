@@ -1,0 +1,133 @@
+.join_wrap{
+   width: 100%;
+   max-width: 700px;
+   margin: 0 auto;
+   position: relative;
+   top:80px; left:0;
+   /* border: 1px solid; */
+   box-sizing: border-box;
+}
+.join_wrap>h2{
+   text-align: center;
+   margin: 60px 0;
+   padding-bottom: 0px;
+   /* background-color: skyblue; */
+}
+.join_notice_wrap{
+   margin-bottom: 30px;
+}
+.join_notice_wrap h3{
+   font-size: 26px;
+}
+.join_notice_wrap p{
+   text-align: right;
+   font-size: 16px;
+}
+/* form 태그 */
+#join_form{
+   /* border: 1px solid #f00; */
+   padding-top: 50px;
+}
+.join_table{
+   width: 100%;
+   /* border: 1px solid #f00; */
+   box-sizing: border-box;
+}
+.join_table tr{
+   border-bottom: 1px solid;
+   box-sizing: border-box;
+   line-height: 50px;
+   font-size: 18px;
+}
+.join_table tr td:last-child input{
+   border: 1px solid #777;
+   height: 30px;
+   width: 300px;
+}
+/* 버튼 */
+.join_btn{
+   /* background-color: lightseagreen; */
+   margin-top: 50px;
+   text-align: center;
+}
+#join_reset{
+   width: 150px;
+   height: 40px;
+   padding: 0;
+   cursor: pointer;
+   font-size: 18px;
+   background-color: #fff;
+   border: 1px solid #A58E74;
+   color: #A58E74;
+   margin-right: 10px;
+}
+#join_check{
+   width: 150px;
+   height: 40px;
+   padding: 0;
+   cursor: pointer;
+   font-size: 18px;
+   background-color: #A58E74;
+   border: 0;
+   color: #fff;
+}
+
+
+
+
+/* 미디어쿼리  */
+@media (max-width:1400px) {
+   .join_wrap{
+      padding-right: 10px;
+      padding-left: 10px;
+      box-sizing: border-box;
+   }
+}
+@media (max-width:1240px) {
+   .join_wrap{
+      top:68px;
+   }
+   .join_wrap>h2{
+      margin: 30px 0;
+   }
+   /* 버튼 */
+   .join_btn{
+      margin-top: 30px;
+   }
+}
+@media (max-width:1000px){
+   /* 폰트사이즈 15*/
+   .join_table tr{
+      font-size: 15px;
+   }
+   .join_notice_wrap h3{
+      font-size: 22px;
+   }
+   .join_notice_wrap p{
+      font-size: 15px;
+   }
+}
+@media (max-width:769px) {
+   .join_wrap{
+      top:48px;
+      max-width: 769px;
+   }
+}
+@media (max-width:680px){
+   .join_wrap{
+      max-width: 680px;
+   }
+   .join_table tr td:last-child input{
+      width: 220px;
+   }
+   /* 폰트사이즈 수정*/
+   .join_table tr{
+      font-size: 14px;
+   }
+   .join_notice_wrap h3{
+      font-size: 18px;
+   }
+   .join_notice_wrap p{
+      font-size: 14px;
+   }
+}

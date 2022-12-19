@@ -1,0 +1,27 @@
+<div class="notice_viewer_wrap">
+  <h2>NOTICE</h2>
+  <div class="notice_viewer">
+    <div class="notice_viewer_title">
+        <h3><%= row.title %></h3>
+    </div>
+    <div class="notice_viewer_info">
+        <div class="viewer_info_left">
+          <p><%= row.wirte %></p>
+          <p class="info_date"><%= row.Date %></p>
+        </div>
+        <div class="viewer_info_right">
+          <p>조회수</p>
+          <p class="info_num">849</p>
+        </div>
+    </div>
+    <div class="notice_viewer_cont">
+        <%= row.cont %>
+    </div>
+    <form class="notice_viewer_btn">
+        <input type="button" id="notice_list_btn" value="목록" onclick="javascript:location.href='/notice_list'"></input>
+        <input type="button" id="notice_write_btn" value="글수정" onclick="javascript:location.href='/updateM?num=<%= row.num %>'"></input>
+        <input type="button" id="notice_delete_btn" value="삭제" onclick="javascript:location.href='/deleteM?num=<%= row.num %>'">
+    </form>
+  </div>
+</div>
+<div class="b140"></div>

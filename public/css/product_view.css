@@ -1,0 +1,55 @@
+/* 프로덕트 뷰어 워랩 */
+.product_view_wrap{
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  position: relative;
+  top:80px; left:0;
+  box-sizing: border-box;
+}
+.product_view_wrap>h2{
+  text-align: center;
+  margin: 60px 0;
+  padding-bottom: 0px;
+}
+
+/* 제품 이미지,텍스트  */
+.product_view{
+  display: flex;
+  justify-content: space-between;
+}
+.product_view_img{
+  width: 50%;
+  height: auto;
+  text-align: center;
+  /* background-color: #00f; */
+}
+.product_view_img>img{
+  width: 50%;
+  height: 100%;
+}
+.product_view_txt{
+  width: 50%;
+  height: auto;
+  border: 1px solid;
+}
+.product_view_title{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+.product_view_tag{
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.product_view_price{
+  font-size: 18px;
+  font-weight: bold;
+  color: #777;
+}
+
+/* 수정 삭제 버튼 */
+.pro_up_dele_btn_box{
+  display: flex;
+}

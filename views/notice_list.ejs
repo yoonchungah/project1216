@@ -1,0 +1,43 @@
+<div class="notice_list_wrap">
+  <h2>NOTICE</h2>
+  <div class="notice_list">
+    <ul class="notice_list_title">
+      <li class="noti_num">번호</li>
+      <li class="noti_title">제목</li>
+      <li class="noti_write">작성자</li>
+      <li class="noti_day">작성일</li>
+      <li class="noti_view">조회수</li>
+    </ul>
+    <% rows.forEach((row,index)=>{  %>
+    <ul class="notice_list_cont">
+      <li class="noti_num"><%= row.num %></li>
+      <li class="noti_title" onclick="javascript:location.href='/notice_viewer?num=<%= row.num %>'"><%= row.title %></li>
+      <li class="noti_write"><%= row.wirte %></li>
+      <li class="noti_day"><%= row.Date %></li>
+      <li class="noti_view">849</li>
+    </ul>
+    <% }); %>
+  </div>
+  <form class="notice_btn">
+    <div class="memo_write_btn">
+      <button type="button" id="write_btn" value="새로작성" onclick="javascript:location.href='/notice_write'">글작성</button>
+    </div>
+    <div class="memo_page_btn">
+      <input type="button" id="list_page_num" value="1"></input>
+    </div>
+    <ul class="notice_list_btn">
+      <li class="memo_select_wrap">
+        <select name="notice_select" id="notice_select">
+          <option value="w_title">제목</option>
+          <option value="w_num">번호</option>
+          <option value="w_wriht">작성자</option>
+          <option value="w_day">작성일</option>
+          <option value="w_view">조회수</option>
+        </select>
+      </li>
+      <li class="memo_search_wrap"><input type="text"></li>
+      <li class="memo_search_btn"><input type="button" value="검색" id="notice_search"></li>
+    </ul>
+  </form>
+</div>
+<div class="b140"></div>

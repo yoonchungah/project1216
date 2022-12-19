@@ -1,0 +1,278 @@
+/* 서브페이지 배너 */
+.sub_banner>div{
+  width: 100%;
+  padding-top: 40%;
+  background-image: url(../img/banner.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top:80px; left:0;
+}
+.sub_banner_txt{
+  position: absolute;
+  top:10%; left:10%;
+  text-align: center;
+}
+.sub_banner_txt>h2{
+  color: #fff;
+}
+.sub_banner_txt>p{
+  color: #000;
+  font-size: 32px;
+}
+
+/* 서브페이지 프로덕트 메뉴 */
+.sub_pro_menu_wrap{
+  margin-top: 80px;
+  padding-bottom: 120px;
+}
+.sub_pro_menu{
+  position: sticky;
+  top:0px; left: 0;
+  
+}
+/* 추가한 부분 */
+.scroll-menu {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.sub_pro_menu>ul{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sub_pro_menu a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  margin-right: 100px;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+/*서브페이지 프로덕트 제품 */
+/* 샴푸볼 */
+.sp_wrap>ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sp_wrap>ul>li{
+  width: calc(25% - 20px);
+}
+.sp_ball_img>img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding-top: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+}
+/* .sp_ball_img1{
+  background-image: url(../img/bpro1.png);
+}
+.sp_ball_img2{
+  background-image: url(../img/bpro2.png);
+}
+.sp_ball_img3{
+  background-image: url(../img/bpro3.png);
+}
+.sp_ball_img4{
+  background-image: url(../img/bpro4.png);
+} */
+/* 뷰티볼 */
+.bt_wrap>ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.bt_wrap>ul>li{
+  width: calc(25% - 20px);
+}
+.bt_ball_img>img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding-top: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+}
+/* .bt_ball_img1{
+  background-image: url(../img/bpro5.png);
+}
+.bt_ball_img2{
+  background-image: url(../img/bpro6.png);
+}
+.bt_ball_img3{
+  background-image: url(../img/bpro13.png);
+}
+.bt_ball_img4{
+  background-image: url(../img/bpro14.png);
+} */
+/* 기프트세트 */
+.gf_wrap>ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gf_wrap>ul>li{
+  width: calc(25% - 20px);
+}
+.gf_set_img>img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding-top: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+}
+/* .gf_set_img1{
+  background-image: url(../img/npro1.jpg);
+}
+.gf_set_img2{
+  background-image: url(../img/npro2.jpg);
+}
+.gf_set_img3{
+  background-image: url(../img/npro3.jpg);
+}
+.gf_set_img4{
+  background-image: url(../img/npro4.jpg);
+} */
+
+/* 굿즈세트 */
+.gds_wrap>ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gds_wrap>ul>li{
+  width: calc(25% - 20px);
+}
+.gds_img>img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding-top: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+}
+/* .gds_img1{
+  background-image: url(../img/bpro11.jpg);
+}
+.gds_img2{
+  background-image: url(../img/bpro12.jpg);
+}
+.gds_img3{
+  background-image: url(../img/bpro9.jpg);
+}
+.gds_img4{
+  background-image: url(../img/bpro7.jpg);
+}
+.gds_img5{
+  background-image: url(../img/bpro8.jpg);
+}
+.gds_img6{
+  background-image: url(../img/bpro10.jpg);
+} */
+
+/* 미디어쿼리*/
+@media (max-width:1400px) {
+  /*서브페이지 프로덕트 제품 */
+  .sp_wrap>ul>li{
+    width: calc(25% - 10px);
+  }
+  .bt_wrap>ul>li{
+    width: calc(25% - 10px);
+  }
+  .gf_wrap>ul>li{
+    width: calc(25% - 10px);
+  }
+  .gds_wrap>ul>li{
+    width: calc(25% - 10px);
+  }
+
+  }
+@media (max-width:1240px) {
+/* 서브페이지 배너 */
+  .sub_banner>div{
+    top:68px;
+  }
+  .sub_banner_txt>p{
+    font-size: 22px;
+  }
+}
+@media (max-width:1000px){
+  /* 서브페이지 배너 */
+  .sub_banner_txt{
+    top:5%; left:5%;
+  }
+  .sub_banner_txt>h2{
+    color: #000;
+  }
+  /*서브페이지 프로덕트 제품 */
+  .sp_wrap>ul>li{  
+    width: calc(50% - 10px);
+  }
+  .bt_wrap>ul>li{
+    width: calc(50% - 10px);
+  }
+  .gf_wrap>ul>li{
+    width: calc(50% - 10px);
+  }
+  .gds_wrap>ul>li{
+    width: calc(50% - 10px);
+  }
+  /* 서브페이지 프로덕트 메뉴 */
+  .sub_pro_menu_wrap{
+    margin-top: 70px;
+  } 
+  .sub_pro_menu a{
+    font-size: 16px;
+    margin-right: 50px;
+  }
+
+}
+
+@media (max-width:769px){
+  /* 서브페이지배너 */
+  .sub_banner>div{
+    position: relative;
+    top:48px;
+    /* margin-top:30px; */
+  }
+  .sub_banner_txt>h2{
+    font-size: 22px;
+  } 
+  .sub_banner_txt>p{
+    font-size: 16px;
+  }
+    /* 프로덕트메뉴 */
+  .sub_pro_menu_wrap{
+    margin-top: 50px;
+    padding-bottom: 60px;
+  }
+  .sub_pro_menu a{
+    margin-right: 25px;
+  }
+}
+@media (max-width:580px){
+  /* 서브페이지 배너 */
+  .sub_banner_txt>h2{
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .sub_banner_txt>p{
+    font-size: 14px;
+  }
+  /* 프로덕트메뉴 */
+  .sub_pro_menu a{
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  
+}

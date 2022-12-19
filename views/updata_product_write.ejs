@@ -1,0 +1,34 @@
+<div class="up_product_write_wrap">
+  <p>썸네일 수정</p>
+  <div class="up_product_write">
+    <form method="post" action="/upproductw" enctype="multipart/form-data">
+      <div class="up_product_write_list">
+        <ul>
+          <li>
+            <input type="hidden" name="up_thumpro_id" value="<%= row.id %>">
+          </li>
+          <li>
+            <label for="up_thumpro_img">이미지파일</label>
+            <input type="file" name="up_thumpro_img" id="up_thumpro_img" value="<%= row.img %>">
+          </li>
+          <li>
+            <label for="up_thumpro_name">제품명</label>
+            <input type="text" name="up_thumpro_name" id="up_thumpro_name" value="<%= row.title %>">
+          </li>
+          <li>
+            <label for="up_thumpro_tag">해쉬태그</label>
+            <input type="text" name="up_thumpro_tag" id="up_thumpro_tag" value="<%= row.tag %>">
+          </li>
+          <li>
+            <label for="up_thumpro_price">가격</label>
+            <input type="text" name="up_thumpro_price" id="up_thumpro_price" value="<%= row.price %>">
+          </li>
+        </ul>
+      </div>
+      <div class="up_product_write_btn"> 
+        <input type="submit" value="확인">
+      </div>
+    </form>
+  </div>
+</div>
+<div class="b140"></div>

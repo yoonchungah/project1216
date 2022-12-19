@@ -1,0 +1,101 @@
+<!-- 서브페이지 배너 -->
+<section class="sub_banner w1480">
+  <div>
+    <div class="sub_banner_txt">
+      <h2>모두를 위한 비건 클린 뷰티,<br>
+        에리제론</h2>
+      <p>자연의 생명력을 피부에 전하다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 프로덕트메뉴 -->
+<section class="sub_pro_menu_wrap">
+  <div class="w1480">
+    <div class="sub_pro_menu">
+      <ul>
+        <li><a href="#sp_ball">All Products</a></li>
+        <li><a href="#sp_ball">Shampoo Ball</a></li>
+        <li><a href="#bt_ball">Beauty Ball</a></li>
+        <li><a href="#gf_set">Gift Set</a></li>
+        <li><a href="#gds">Goods</a></li>
+      </ul>
+    </div>
+    <article id="sp_ball" class="p60">
+      <div class="sp_wrap">
+        <ul>
+          <% for(i=0; i<4; i++){  %>
+          <li>
+            <div class="sp_ball_img">
+              <img src="<%= rows[i].img %>">
+            </div>
+            <div class="txt_wrap">
+              <p class="txt_title" onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'"><a href="#"><%= rows[i].title %></a></p>
+              <p class="h_tag"><a href="#"><%= rows[i].tag %></a></p>
+              <p class="price"><a href="#"><%= rows[i].price %>원</a></p>
+            </div>
+          </li>
+          <% }; %>
+        </ul>
+      </div>
+    </article>
+
+    <article id="bt_ball" class="p60">
+      <div class="bt_wrap">
+        <ul>
+          <% for(i=4; i<8; i++){  %>
+          <li>
+            <div class="bt_ball_img">
+              <img src="<%= rows[i].img %>">
+            </div>
+            <div class="txt_wrap">
+              <p class="txt_title" onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'"><a href="#"><%= rows[i].title %></a></p>
+              <p class="h_tag"><a href="#"><%= rows[i].tag %></a></p>
+              <p class="price"><a href="#"><%= rows[i].price %>원</a></p>
+            </div>
+          </li>
+          <% }; %>
+        </ul>
+      </div>
+    </article>
+  
+    <article id="gf_set" class="p60">
+      <div class="gf_wrap">
+        <ul>
+          <% for(i=8; i<12; i++){  %>
+          <li>
+            <div class="gf_set_img">
+              <img src="<%= rows[i].img %>">
+            </div>
+            <div class="txt_wrap">
+              <p class="txt_title" onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'"><a href="#"><%= rows[i].title %></a></p>
+              <p class="price"><a href="#"><%= rows[i].price %>원</a></p>
+            </div>
+          </li>
+          <% }; %>
+        </ul>
+      </div>
+    </article>
+  
+    <article id="gds" class="p60">
+      <div class="gds_wrap">
+        <ul>
+          <% for(i=12; i<16; i++){  %>
+          <li>
+            <div class="gds_img">
+              <img src="<%= rows[i].img %>">
+            </div>
+            <div class="txt_wrap">
+              <p class="txt_title" onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'"><a href="#"><%= rows[i].title %></a></p>
+              <p class="price"><a href="#"><%= rows[i].price %>원</a></p>
+            </div>
+          </li>
+          <% }; %>
+        </ul>
+      </div>
+    </article>
+
+    
+  </div>
+</section>
+<script src="js/eri_sub_pro.js"></script>
