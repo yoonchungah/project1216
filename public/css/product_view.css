@@ -31,7 +31,7 @@
 .product_view_txt{
   width: 50%;
   height: auto;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .product_view_title{
   font-size: 18px;

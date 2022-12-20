@@ -138,9 +138,9 @@ router.get('/deleteM',(req, res) => {
 const upload = multer({
   storage:multer.diskStorage({
     destination(req,file,done){
-      // done(null,'../public/uploads/');
+      done(null,'../public/uploads/');
       //업로드 위치 바꿈 기존의 node bin/www 폴더로 연결되게
-      done(null,'public/uploads/');
+      // done(null,'public/uploads/');
     },
     filename(req,file,done){
       const ext = path.extname(file.originalname);
@@ -218,6 +218,7 @@ router.get('/product_view', (req, res) => {
 router.post('/upproductw',upload.single('up_thumpro_img'), (req,res)=>{
   let param = JSON.parse(JSON.stringify(req.body));
   let up_thumpro_img = 'uploads/' + req.file.filename;
+  console.log(up_thumpro_img);
   let up_thumpro_id = param['up_thumpro_id'];
   let up_thumpro_name = param['up_thumpro_name'];
   let up_thumpro_tag = param['up_thumpro_tag'];

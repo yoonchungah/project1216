@@ -1,11 +1,22 @@
+// var mysql      = require('mysql');
+// var connection = mysql.createConnection({
+//   host     : '127.0.0.1',
+//   user     : 'root',
+//   password : '1234',
+//   database : 'eri',
+//   dateStrings : 'date'
+// });
+
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : '127.0.0.1',
+  host     : 'database-1.cedxt1puu3qa.ap-northeast-2.rds.amazonaws.com',
   user     : 'root',
-  password : '1234',
+  password : 'victory7',
   database : 'eri',
-  dateStrings : 'date'
+  dateStrings : 'date', //날짜 시간 출력
+  // multipleStatements: ture
 });
+
 
 connection.connect(function(err){
   if (err) throw err;
