@@ -428,7 +428,7 @@ article>p{
     height: auto;
     padding-top: 152.7777%;
     background-image: url(../img/m_banner.png);
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment : fixed;
@@ -484,5 +484,19 @@ article>p{
   /* 메인5 */
   .main5_txt>p{
     font-size: 16px;
+  }
+}
+
+
+@media (max-width:500px){
+  /* 메인2, 메인4 폰트 사이즈 */
+  .txt_title>a{
+    font-size: 12px;
+  }
+  .price>a{
+    font-size: 12px;
+  }
+  .h_tag>a{
+    font-size: 12px;
   }
 }

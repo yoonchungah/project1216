@@ -1,11 +1,5 @@
-console.log(navigator.language);
-
-console.log(window.pageYOffset);
-const hV = innerHeight;
-
 const sp_ball = document.getElementById("sp_ball");
 let pos = sp_ball.offsetTop;
-console.log(pos);
 
 window.onscroll = function(){
    scrollMenu();
@@ -20,5 +14,4 @@ function scrollMenu(){
     }
 
  }
-//window.addEventListener('scroll', scrollMenu)
 

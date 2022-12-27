@@ -86,7 +86,7 @@
 .memo_page_btn{
    text-align: center;
 }
-#list_page_num{
+.list_page_num{
    width: 40px;
    height: 40px;
    background-color: #A58E74;
@@ -196,7 +196,7 @@
       font-size: 16px;
    }
    /* 페이지 버튼 */
-   #list_page_num{
+   .list_page_num{
       font-size: 16px;
    }
    /* 검색버튼 */
@@ -233,13 +233,13 @@
    flex: 1;
    }
    /* 버튼 시작 */
-#write_btn{
+   #write_btn{
    width: 60px;
    height: 30px;
    font-size: 14px;
    }
    /* 페이지 버튼 */
-   #list_page_num{
+   .list_page_num{
       width: 30px;
       height: 30px;
       font-size: 14px;

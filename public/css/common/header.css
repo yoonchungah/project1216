@@ -67,6 +67,9 @@ header{
   font-size: 18px;
 }
 /* 모바일에서만 보이는 헤더메뉴 */
+.mobiles{
+  display: none;
+}
 .mobile_v{
   display: none;
   justify-content: space-between;
@@ -121,6 +124,17 @@ header{
    /* 헤더 */
    .mobile_v{
     display: flex;
+  }
+  .mobiles{
+    display: inline-block;
+  }
+  .mobiles a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+  }
+  .mobiles a:first-child{
+    margin-right: 10px;
   }
   /* 조인과 아이콘 */
   .top_manu_ul li a{
