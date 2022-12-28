@@ -109,9 +109,6 @@
  cursor: pointer;
  font-size: 18px;
 }
-input {
-  border-radius: 0 !important;
-}
 /* 페이지 검색 */
 .event_list_btn{
  margin-top: 50px;
@@ -138,9 +135,10 @@ input {
  border: 1px solid;
  height: 40px;
  box-sizing: border-box;
+ border-radius: 0;
 }
 /* 검색버튼 */
-.event_search_btn input{
+.event_search_btn button{
  width: 80px;
  margin: 0;
  background-color: #A58E74;
@@ -150,6 +148,7 @@ input {
  cursor: pointer;
  font-size: 18px;
  line-height: 40px;
+ border-radius: 0;
 }
 
 /* 미디어쿼리 */
@@ -202,7 +201,7 @@ input {
    font-size: 16px;
  }
  /* 검색버튼 */
- .event_search_btn input{
+ .event_search_btn button{
    font-size: 16px;
  }
 }
@@ -246,7 +245,7 @@ input {
  }
 
  /* 검색버튼 */
- .event_search_btn input{
+ .event_search_btn button{
     width: 60px;
     font-size: 16px;
     line-height: 30px;
@@ -269,7 +268,7 @@ input {
     margin: 10px 0;
  }
  /* 검색버튼 */
- .event_search_btn input{
+ .event_search_btn button{
     width: 80vw;
  }
 }
