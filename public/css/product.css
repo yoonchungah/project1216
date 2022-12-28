@@ -3,7 +3,6 @@
   width: 100%;
   padding-top: 40%;
   background-image: url(../img/banner.png);
-  /* background-position: center center; */
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -59,6 +58,7 @@
 }
 .sp_wrap>ul>li{
   width: calc(25% - 20px);
+  cursor: pointer;
 }
 .sp_ball_img>img{
   display: block;
@@ -73,6 +73,7 @@
 }
 .bt_wrap>ul>li{
   width: calc(25% - 20px);
+  cursor: pointer;
 }
 .bt_ball_img>img{
   display: block;
@@ -87,6 +88,7 @@
 }
 .gf_wrap>ul>li{
   width: calc(25% - 20px);
+  cursor: pointer;
 }
 .gf_set_img>img{
   display: block;
@@ -102,6 +104,7 @@
 }
 .gds_wrap>ul>li{
   width: calc(25% - 20px);
+  cursor: pointer;
 }
 .gds_img>img{
   display: block;
@@ -173,7 +176,6 @@
   .sub_banner>div{
     position: relative;
     top:48px;
-    /* margin-top:30px; */
   }
   .sub_banner_txt>h2{
     font-size: 22px;

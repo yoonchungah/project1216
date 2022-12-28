@@ -4,14 +4,12 @@
    margin: 0 auto;
    position: relative;
    top:80px; left:0;
-   /* border: 1px solid; */
    box-sizing: border-box;
 }
 .join_wrap>h2{
    text-align: center;
    margin: 60px 0;
    padding-bottom: 0px;
-   /* background-color: skyblue; */
 }
 .join_notice_wrap{
    margin-bottom: 30px;
@@ -25,12 +23,10 @@
 }
 /* form 태그 */
 #join_form{
-   /* border: 1px solid #f00; */
    padding-top: 50px;
 }
 .join_table{
    width: 100%;
-   /* border: 1px solid #f00; */
    box-sizing: border-box;
 }
 .join_table tr{
@@ -46,7 +42,6 @@
 }
 /* 버튼 */
 .join_btn{
-   /* background-color: lightseagreen; */
    margin-top: 50px;
    text-align: center;
 }

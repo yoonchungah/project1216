@@ -139,8 +139,6 @@ const upload = multer({
   storage:multer.diskStorage({
     destination(req,file,done){
       done(null,'../public/uploads/');
-      //업로드 위치 바꿈 기존의 node bin/www 폴더로 연결되게
-      // done(null,'public/uploads/');
     },
     filename(req,file,done){
       const ext = path.extname(file.originalname);
@@ -197,7 +195,7 @@ router.get('/updatePro',(req, res) => {
   db.getproByid(id,(row)=>{
     //memoTable의 row의 0번째 즉 id를 지칭
     //row 한줄만 불러올때
-    res.render('updata_product_write',{row:row[0]})
+    res.render('product_updata_write',{row:row[0]})
   })
 });
 
@@ -208,11 +206,6 @@ router.get('/product_view', (req, res) => {
     res.render('product_view',{row:row[0]})
   })
 });
-
-// router.get('/product_view', (req, res) => {
-//   res.render('product_view');
-// });
-
 
 // upproductw 썸네일 updata_product_write -> 폼 액션명 연결
 router.post('/upproductw',upload.single('up_thumpro_img'), (req,res)=>{

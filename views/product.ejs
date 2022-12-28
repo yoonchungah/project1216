@@ -24,12 +24,12 @@
       <div class="sp_wrap">
         <ul>
           <% for(i=0; i<4; i++){  %>
-          <li>
+          <li onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'">
             <div class="sp_ball_img">
               <img src="<%= rows[i].img %>">
             </div>
             <div class="txt_wrap">
-              <p class="txt_title" onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'"><a href="#"><%= rows[i].title %></a></p>
+              <p class="txt_title"><a href="#"><%= rows[i].title %></a></p>
               <p class="h_tag"><a href="#"><%= rows[i].tag %></a></p>
               <p class="price"><a href="#"><%= rows[i].price %>원</a></p>
             </div>
@@ -43,12 +43,12 @@
       <div class="bt_wrap">
         <ul>
           <% for(i=4; i<8; i++){  %>
-          <li>
+          <li onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'">
             <div class="bt_ball_img">
               <img src="<%= rows[i].img %>">
             </div>
             <div class="txt_wrap">
-              <p class="txt_title" onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'"><a href="#"><%= rows[i].title %></a></p>
+              <p class="txt_title"><a href="#"><%= rows[i].title %></a></p>
               <p class="h_tag"><a href="#"><%= rows[i].tag %></a></p>
               <p class="price"><a href="#"><%= rows[i].price %>원</a></p>
             </div>
@@ -62,12 +62,12 @@
       <div class="gf_wrap">
         <ul>
           <% for(i=8; i<12; i++){  %>
-          <li>
+          <li onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'">
             <div class="gf_set_img">
               <img src="<%= rows[i].img %>">
             </div>
             <div class="txt_wrap">
-              <p class="txt_title" onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'"><a href="#"><%= rows[i].title %></a></p>
+              <p class="txt_title"><a href="#"><%= rows[i].title %></a></p>
               <p class="price"><a href="#"><%= rows[i].price %>원</a></p>
             </div>
           </li>
@@ -80,12 +80,12 @@
       <div class="gds_wrap">
         <ul>
           <% for(i=12; i<16; i++){  %>
-          <li>
+          <li onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'">
             <div class="gds_img">
               <img src="<%= rows[i].img %>">
             </div>
             <div class="txt_wrap">
-              <p class="txt_title" onclick="javascript:location.href='/product_view?id=<%= rows[i].id %>'"><a href="#"><%= rows[i].title %></a></p>
+              <p class="txt_title"><a href="#"><%= rows[i].title %></a></p>
               <p class="price"><a href="#"><%= rows[i].price %>원</a></p>
             </div>
           </li>
@@ -97,4 +97,4 @@
     
   </div>
 </section>
-<script src="js/eri_sub_pro.js"></script>
+<script src="js/product.js"></script>

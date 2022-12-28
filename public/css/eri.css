@@ -1,20 +1,18 @@
-/* @import url(common/reset.css); */
 @import url(common/header.css);
 @import url(common/footer.css);
-@import url(main_page_section.css);
-@import url(eri_brand.css);
-@import url(eri_sub_pro.css);
-@import url(eri_event_list.css);
-@import url(eri_notice_list.css);
-@import url(eri_notice_viewer.css);
-@import url(eri_notice_write.css);
-@import url(eri_notice_write_emend.css);
-@import url(eri_join.css);
-@import url(eri_login.css);
-/* 1213추가 */
+@import url(main.css);
+@import url(brand.css);
+@import url(product.css);
 @import url(product_write.css);
-@import url(updata_product_write.css);
+@import url(product_updata_write.css);
 @import url(product_view.css);
+@import url(event_list.css);
+@import url(notice_list.css);
+@import url(notice_viewer.css);
+@import url(notice_write.css);
+@import url(notice_write_emend.css);
+@import url(join.css);
+@import url(login.css);
 
 html{
   scroll-behavior: smooth;
@@ -64,7 +62,6 @@ article>p{
 /* 공통적인 미디어 쿼리 */
 @media (max-width:1550px) {
   .w1480{
-    /* max-width: 1480px; */
     margin: 0 auto;
     padding-right: 10px;
     padding-left: 10px;

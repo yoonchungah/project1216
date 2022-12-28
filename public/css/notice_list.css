@@ -257,7 +257,6 @@
       width: 200px;
       height: 30px;
    }
-
    /* 검색버튼 */
    .memo_search_btn button{
       width: 60px;
@@ -265,6 +264,23 @@
       line-height: 30px;
       font-size: 14px;
    }
+  }
+
+  @media (max-width:500px){
+   /* 리스트 제목 */
+   .noti_title{
+      flex: 5;
+   }
+   .noti_write{
+      display: none;
+   }
+   .noti_day{
+      display: none;
+   }
+   .noti_view{
+      display: none;
+   }
+
   }
 
   @media (max-width:420px){

@@ -5,20 +5,16 @@
    margin: 0 auto;
    position: relative;
    top:80px; left:0;
-   /* border: 1px solid; */
    box-sizing: border-box;
 }
 .eri_brand_wrap>h2{
    text-align: center;
    margin: 60px 0;
    padding-bottom: 0px;
-   /* background-color: skyblue; */
 }
 
 /* 브랜드 */
 .eri_brands{
-   /* border: 1px solid red; */
-   /* background-color: salmon; */
    padding: 0 30px;
    box-sizing: border-box;
 }
@@ -48,29 +44,26 @@
   font-size: 26px;
   padding-bottom: 50px;
 }
-/* 미디어쿼리 */
-@media (max-width:1400px) {
-    /* 브랜드 워랩 */
-   .eri_brand_wrap{
-     padding-right: 10px;
-     padding-left: 10px;
-     box-sizing: border-box;
-     max-width: 1400px;
-   }
- }
-@media (max-width:1240px){
-    /* 브랜드 워랩 */
-   .eri_brand_wrap{
-      top:68px;
-      max-width: 1240px;
-   }
-   .eri_brand_wrap>h2{
-      margin: 30px 0;
-   }
- }
- /* @media (max-width:1000px){
-
- } */
+  /* 미디어쿼리 */
+  @media (max-width:1400px) {
+      /* 브랜드 워랩 */
+    .eri_brand_wrap{
+      padding-right: 10px;
+      padding-left: 10px;
+      box-sizing: border-box;
+      max-width: 1400px;
+    }
+  }
+  @media (max-width:1240px){
+      /* 브랜드 워랩 */
+    .eri_brand_wrap{
+        top:68px;
+        max-width: 1240px;
+    }
+    .eri_brand_wrap>h2{
+        margin: 30px 0;
+    }
+  }
  @media (max-width:769px){
     /* 브랜드 워랩 */
    .eri_brand_wrap{

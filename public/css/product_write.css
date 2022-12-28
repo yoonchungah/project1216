@@ -5,7 +5,6 @@
    margin: 0 auto;
    position: relative;
    top:80px; left:0;
-   /* border: 1px solid; */
    box-sizing: border-box;
 }
 .product_write_wrap>p{
@@ -13,7 +12,6 @@
    padding-bottom: 0px;
    font-size: 18px;
    font-weight: bold;
-   /* background-color: skyblue; */
 }
 /* 작성자,이메일,작성일,조회수,제목 */
 .product_write_list>ul{
