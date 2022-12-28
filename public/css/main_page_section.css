@@ -428,10 +428,10 @@ article>p{
     height: auto;
     padding-top: 152.7777%;
     background-image: url(../img/m_banner.png);
-    background-position: top center;
+    background-position: top top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment : fixed;
+    background-attachment : scroll;
     position: relative;
   }
   .main5_txt>h2{
@@ -498,5 +498,9 @@ article>p{
   }
   .h_tag>a{
     font-size: 12px;
+  }
+  /* 메인5 */
+  .main5_txt>p{
+    font-size: 13px;
   }
 }

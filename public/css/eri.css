@@ -172,6 +172,7 @@ article>p{
   /* 공통 폰트 사이즈 */
   h2{
     font-size: 15px;
+    padding-bottom: 10px;
   }
   h2>a{
     font-size: 15px;
