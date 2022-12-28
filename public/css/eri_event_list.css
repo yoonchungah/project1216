@@ -110,7 +110,7 @@
  font-size: 18px;
 }
 input {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 /* 페이지 검색 */
 .event_list_btn{
