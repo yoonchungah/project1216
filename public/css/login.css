@@ -1,21 +1,21 @@
 .login_wrap{
+   position: relative;
+   top:80px; left:0;
+
+}
+.login{
    width: 100%;
    max-width: 500px;
    margin: 0 auto;
-   position: relative;
-   top:80px; left:0;
    box-sizing: border-box;
 }
-.login_wrap>h2{
+.login>h2{
    text-align: center;
-   margin: 60px 0;
-   padding-bottom: 0px;
 }
 .container{
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding: 20px 50px;
    box-sizing: border-box;
 }
 .container label{
@@ -39,18 +39,21 @@
 .container ul{
    display: flex;
    justify-content: end;
+   gap: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 .container ul li a{
    display: block;
    text-decoration: none;
    color: #777;
    font-size: 14px;
-   margin: 10px 0 0 10px;
 }
 .container p{
-   padding: 40px 0 20px 0;
    color: #777;
    font-size: 14px;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 #join_but{
    height: 40px;
@@ -65,13 +68,44 @@
    .login_wrap{
       top:68px;
    }
-   .login_wrap>h2{
-      margin: 30px 0;
-   }
  }
 
  @media (max-width:769px){
    .login_wrap{
       top:48px;
+   }
+ }
+
+ @media (max-width:580px){
+   #login_but{
+      font-size: 16px;
+   }
+   #join_but{
+      font-size: 16px;
+   }
+ }
+ 
+ @media (max-width:500px){
+   .login>h2{
+      font-size: 20px;
+   }  
+   .container label{
+      font-size: 15px;
+   }
+   .container input{
+      font-size: 15px;
+   }
+   
+   .container ul li a{
+      font-size: 13px;
+   }
+   .container p{
+      font-size: 13px;
+   }
+   #login_but{
+      font-size: 15px;
+   }
+   #join_but{
+      font-size: 15px;
    }
  }

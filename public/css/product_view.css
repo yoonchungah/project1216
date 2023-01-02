@@ -1,53 +1,254 @@
 /* 프로덕트 뷰어 워랩 */
 .product_view_wrap{
-  width: 100%;
-  max-width: 1480px;
-  margin: 0 auto;
   position: relative;
   top:80px; left:0;
-  box-sizing: border-box;
 }
-.product_view_wrap>h2{
-  text-align: center;
-  margin: 60px 0;
-  padding-bottom: 0px;
-}
-
 /* 제품 이미지,텍스트  */
 .product_view{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5%;
 }
+/* 제품 이미지 */
 .product_view_img{
-  width: 50%;
+  width: 30%;
   height: auto;
-  text-align: center;
+  text-align: right;
 }
 .product_view_img>img{
-  width: 50%;
-  height: 100%;
+  width: 100%;
 }
+/* 제품 텍스트 */
 .product_view_txt{
-  width: 50%;
+  width: 55%;
   height: auto;
 }
+/* 제품명 */
 .product_view_title{
-  font-size: 18px;
-  font-weight: bold;
-  text-align: left;
+  font-size: 26px;
 }
+/* 태그 */
 .product_view_tag{
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 18px;
-  font-weight: bold;
-  margin: 20px 0;
-}
-.product_view_price{
-  font-size: 18px;
-  font-weight: bold;
   color: #777;
 }
+/* 판매가 */
+.product_view_price{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+/* 기타사항 */
+.product_view_other{
+  font-size: 18px;
+}
+.product_view_other ul li{
+  margin-bottom: 10px;
+}
+.product_view_other ul li:last-child{
+  margin-bottom: 0;
+}
+.product_view_other ul li p{
+  display: inline-block;
+}
 
-/* 수정 삭제 버튼 */
+/* 구매버튼 */
+.pro_purchase_btn_box{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pro_purchase_btn_box>button{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  border-radius: 0;
+  cursor: pointer;
+}
+.purchase_btn{
+  width: 250px;
+  height: 40px;
+  background-color: #A58E74;
+  color: #fff;
+  border: 0;
+}
+.shopping_btn{
+  width: 200px;
+  height: 40px;
+  color: #A58E74;
+  background-color: #fff;
+  border: 1px solid #A58E74;
+}
+.attention_btn{
+  width: 200px;
+  height: 40px;
+  color: #A58E74;
+  background-color: #fff;
+  border: 1px solid #A58E74;
+}
+/* 글수정 버튼 */
 .pro_up_dele_btn_box{
   display: flex;
+  justify-content: end;
+  gap: 10px;
+  padding-top: 40px;
+}
+.pro_up_dele_btn_box>button{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+.pro_up_dele_btn_box>button:nth-child(1){
+  width: 80px;
+  height: 30px;
+  background-color: #A58E74;
+  color: #fff;
+  border: 0;
+}
+.pro_up_dele_btn_box>button:nth-child(2){
+  width: 80px;
+  height: 30px;
+  color: #A58E74;
+  background-color: #fff;
+  border: 1px solid #A58E74;
+}
+.pro_up_dele_btn_box>button:nth-child(3){
+  width: 80px;
+  height: 30px;
+  color: #A58E74;
+  background-color: #fff;
+  border: 1px solid #A58E74;
+}
+@media (max-width:1240px){
+  /* 이벤트 리스트 워랩 */
+  .product_view_wrap{
+    top:68px;
+  }
+  /* 제품 이미지,텍스트  */
+  .product_view{
+    gap: 5%;
+  }
+  /* 제품 이미지 */
+  .product_view_img{
+    width: 50%;
+  }
+  /* 제품 텍스트 */
+  .product_view_txt{
+    width: 50%;
+  }
+}
+@media (max-width:1000px){
+    /* 태그 */
+  .product_view_tag{
+    font-size: 16px;
+  }
+  /* 판매가 */
+  .product_view_price{
+    font-size: 16px;
+  }
+  /* 기타사항 */
+  .product_view_other{
+    font-size: 16px;
+  }
+  /* 구매버튼 */
+  .pro_purchase_btn_box>button{
+    font-size: 16px;
+  }
+  /* 글수정 버튼 */
+  .pro_up_dele_btn_box{
+    padding-top: 20px;
+  }
+  .pro_up_dele_btn_box>button{
+   font-size: 16px;
+ }
+}
+@media (max-width:769px){
+  /* 이벤트 리스트 워랩 */
+  .product_view_wrap{
+    top:48px;
+  }
+  /* 제품명 */
+.product_view_title{
+  font-size: 23px;
+}
+  /* 태그 */
+.product_view_tag{
+  font-size: 16px;
+}
+/* 판매가 */
+.product_view_price{
+  font-size: 16px;
+}
+/* 기타사항 */
+.product_view_other{
+  font-size: 16px;
+}
+/* 구매버튼 */
+.pro_purchase_btn_box>button{
+  font-size: 16px;
+}
+/* 글수정 버튼 */
+.pro_up_dele_btn_box>button{
+ font-size: 16px;
+}
+}
+
+@media (max-width:680px){
+    /* 제품명 */
+.product_view_title{
+  font-size: 20px;
+}
+    /* 태그 */
+.product_view_tag{
+  font-size: 14px;
+}
+/* 판매가 */
+.product_view_price{
+  font-size: 14px;
+}
+/* 기타사항 */
+.product_view_other{
+  font-size: 14px;
+}
+/* 구매버튼 */
+.pro_purchase_btn_box{
+  gap: 10px;
+  flex-direction: column;
+}
+.pro_purchase_btn_box>button{
+  font-size: 14px;
+}
+.purchase_btn{
+  width: 100%;
+  height: 30px;
+}
+.shopping_btn{
+  width: 100%;
+  height: 30px;
+}
+.attention_btn{
+  width: 100%;
+  height: 30px;
+}
+/* 글수정 버튼 */
+.pro_up_dele_btn_box>button{
+ font-size: 14px;
+}
+}
+
+@media (max-width:480px){
+  .product_view{
+    flex-direction: column;
+    align-items: center;
+  }
+  .product_view_img{
+    width: 100%;
+  }
+  .product_view_txt{
+    width: 100%;
+  }
 }

@@ -1,8 +1,8 @@
-<div class="notice_write_emend_wrap">
+<div class="notice_write_emend_wrap w1480 p120">
   <p>게시판 글 작성</p>
   <div class="notice_write_emend">
     <form method="post" action="/updates" id="notice_write_emend_form">
-      <div class="write_emend_list">
+      <div class="write_emend_list p40">
         <ul>
           <li>
             <input type="hidden" name="emend_num" id="write_list_emend_num" value="<%= row.num %>">
@@ -22,10 +22,9 @@
         </ul>
       </div>
       <div class="write_emend_memo">
-        <!--  cols="30" rows="5" -->
         <textarea name="emend_memo_cont"><%= row.cont %></textarea>
       </div>
-      <div class="write_emend_file_wrap">
+      <div class="write_emend_file_wrap p40">
         <label for="emend_file">첨부파일</label>
         <input type="file" name="emend_file" id="write_emend_file">
       </div>

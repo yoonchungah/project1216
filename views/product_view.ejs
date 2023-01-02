@@ -1,16 +1,41 @@
-<div class="product_view_wrap">
-  <h2>product</h2>
+<div class="product_view_wrap w1480 p120">
   <section class="product_view">
     <article class="product_view_img">
-      <img src="<%= row.img %>" alt="">
+      <img src="<%= row.img %>" alt="product_img">
     </article>
     <article class="product_view_txt">
-      <div class="product_view_title">제품명<%= row.title %></div>
-      <div class="product_view_tag">태그<%= row.tag %></div>
-      <div class="product_view_price">가격<%= row.price %>원</div>
+      <div class="product_view_title"><%= row.title %></div>
+      <div class="product_view_tag"><%= row.tag %></div>
+      <div class="product_view_price">판매가 <%= row.price %>원</div>
+      <div class="product_view_other">
+        <ul>
+          <li>
+            <p>구매제한</p>
+            <p>최소 1개</p>
+          </li>
+          <li>
+            <p>구매혜택</p>
+            <p>적립 마일리지 : +50원</p>
+          </li>
+          <li>
+            <p>배송방법</p>
+            <p>택배</p>
+          </li>
+          <li>
+            <p>배송비</p>
+            <p>3500원(선결제)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="pro_purchase_btn_box p40">
+        <button type="button" class="purchase_btn">바로구매</button>
+        <button type="button" class="shopping_btn">장바구니</button>
+        <button type="button" class="attention_btn">관심상품</button>
+      </div>
       <div class="pro_up_dele_btn_box">
-        <div><input type="button" value="수정" onclick="javascript:location.href='/updatePro?id=<%= row.id %>'"></div>
-       <div><input type="button" value="삭제" onclick="javascript:location.href='/deletePro?id=<%= row.id %>'"></div>
+        <button type="button" value="수정" onclick="javascript:location.href='/updatePro?id=<%= row.id %>'">수정</button>
+       <button type="button" value="삭제" onclick="javascript:location.href='/deletePro?id=<%= row.id %>'">삭제</button>
+       <button type="button" value="목록" onclick="javascript:location.href='/product'">목록</button>
       </div>
     </article>
   </section>

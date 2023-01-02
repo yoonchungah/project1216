@@ -1,21 +1,21 @@
-// var mysql      = require('mysql');
-// var connection = mysql.createConnection({
-//   host     : '127.0.0.1',
-//   user     : 'root',
-//   password : '1234',
-//   database : 'eri',
-//   dateStrings : 'date'
-// });
-
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'database-1.cedxt1puu3qa.ap-northeast-2.rds.amazonaws.com',
+  host     : '127.0.0.1',
   user     : 'root',
-  password : 'victory7',
+  password : '1234',
   database : 'eri',
-  dateStrings : 'date', //날짜 시간 출력
-  // multipleStatements: ture
+  dateStrings : 'date'
 });
+
+// var mysql      = require('mysql');
+// var connection = mysql.createConnection({
+//   host     : 'database-1.cedxt1puu3qa.ap-northeast-2.rds.amazonaws.com',
+//   user     : 'root',
+//   password : 'victory7',
+//   database : 'eri',
+//   dateStrings : 'date', //날짜 시간 출력
+//   // multipleStatements: ture
+// });
 
 
 connection.connect(function(err){
@@ -58,13 +58,6 @@ function insertMemo(write_list_name,write_list_title,write_memo_cont,callback){
     callback();
   })
 }
-/*
-num
-title
-cont
-wirte
-Date
-*/
 //에리제론 프라이머리키 일치하는 테이블만 추출
 function getMemoByid(num, callback){
   connection.query(`SELECT * FROM erinotice WHERE num = ${num}`, (err,row)=>{
@@ -88,15 +81,6 @@ function deleteByid(num,callback){
   })
 }
 
-//1213
-/*
-id
-create_time
-title
-tag
-price
-img 
-*/
 //프로덕트 테이블 추출
 function getproduct(callback){
   connection.query(`SELECT * FROM product1 ORDER BY id`,(err,row)=>{

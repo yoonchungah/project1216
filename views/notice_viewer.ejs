@@ -1,4 +1,4 @@
-<div class="notice_viewer_wrap">
+<div class="notice_viewer_wrap w1480 p120">
   <h2>NOTICE</h2>
   <div class="notice_viewer">
     <div class="notice_viewer_title">
@@ -17,10 +17,10 @@
     <div class="notice_viewer_cont" style="white-space:pre-wrap;">
         <%= row.cont %>
     </div>
-    <form class="notice_viewer_btn">
-        <input type="button" id="notice_list_btn" value="목록" onclick="javascript:location.href='/notice_list'"></input>
-        <input type="button" id="notice_write_btn" value="글수정" onclick="javascript:location.href='/updateM?num=<%= row.num %>'"></input>
-        <input type="button" id="notice_delete_btn" value="삭제" onclick="javascript:location.href='/deleteM?num=<%= row.num %>'">
+    <form class="notice_viewer_btn p40">
+        <button type="button" id="notice_list_btn" value="목록" onclick="javascript:location.href='/notice_list'">목록</button>
+        <button type="button" id="notice_write_btn" value="수정" onclick="javascript:location.href='/updateM?num=<%= row.num %>'">수정</button>
+        <button type="button" id="notice_delete_btn" value="삭제" onclick="javascript:location.href='/deleteM?num=<%= row.num %>'">삭제</button>
     </form>
   </div>
 </div>

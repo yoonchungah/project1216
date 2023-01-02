@@ -1,38 +1,40 @@
-<div class="join_wrap">
-  <h2>JOIN</h2>
-  <form method="post" onsubmit="return Validation();" action="/writeJoin" id="join_form">
-    <table class="join_table">
-      <tr class="join_notice_wrap">
-        <td><h3>기본정보</h3></td>
-        <td><p>* 표시는 반드시 입력하셔야 하는 항목입니다.</p></td>
-      </tr>
-      <tr>
-        <td><label for="id">*아이디</label></td>
-        <td><input type="text" name="join_id" id="id"></td>
-      </tr>
-      <tr>
-        <td><label for="pw">*비밀번호</label></td>
-        <td><input type="password" name="join_pw" id="pwd"></td>
-      </tr>
-      <tr>
-        <td><label for="repw">*비밀번호 확인</label></td>
-        <td><input type="password" name="join_repw" id="repw"></td>
-      </tr>
-      <tr>
-        <td><label for="name">*이름</label></td>
-        <td><input type="text" name="join_name" id="name"></td>
-      </tr>
-      <tr>
-        <td><label for="mail">이메일</label></td>
-        <td><input type="text" name="join_mail" id="mail">
-        </td>
-      </tr>
-    </table>
-    <div class="join_btn"> 
-      <input type="reset" value="취소" id="join_reset" onclick="location.href='/';">
-      <input type="submit" value="회원가입" id="join_check">
-    </div>
-  </form>
+<div class="join_wrap w1480 p120">
+  <div class="join">
+    <h2>JOIN</h2>
+    <form method="post" onsubmit="return Validation();" action="/writeJoin" id="join_form">
+      <div class="join_table_wrap">
+        <ul class="join_table">
+          <li>
+            <p><span>*</span> 표시는 반드시 입력하셔야 하는 항목입니다.</p>
+          </li>
+          <li>
+            <p><label for="id">아이디<span>*</span></label></p>
+            <p><input type="text" name="join_id" id="id" placeholder="(예: abc123)"></p>
+          </li>
+          <li>
+            <p><label for="pw">비밀번호<span>*</span></label></p>
+            <p><input type="password" name="join_pw" id="pw" placeholder="(비밀번호를 입력해주세요)"></p>
+          </li>
+          <li>
+            <p><label for="repw">비밀번호 확인<span>*</span></label></p>
+            <p><input type="password" name="join_repw" id="repw" placeholder="(비밀번호를 다시 입력해주세요)"></p>
+          </li>
+          <li>
+            <p><label for="name">이름<span>*</span></label></p>
+            <p><input type="text" name="join_name"  id="name" placeholder="(띄어쓰기 없이 입력하세요)"></p>
+          </li>
+          <li>
+            <p><label for="mail">이메일<span>*</span></label></p>
+            <p><input type="text" name="join_mail" id="mail" placeholder="(예: temple123@gmail.com )"></p>
+          </li>
+        </ul>
+      </div>
+      <div class="join_btn p40"> 
+        <button type="reset" value="취소" id="join_reset" onclick="location.href='/';">취소</button>
+        <button type="submit" value="회원가입" id="join_check">회원가입</button>
+      </div>
+    </form>
+  </div>
 </div>
 <div class="b140"></div>
 <script src="js/join.js"></script>

@@ -1,8 +1,8 @@
-<div class="notice_write_wrap">
+<div class="notice_write_wrap w1480 p120">
   <p>게시판 글 작성</p>
   <div class="notice_write">
     <form method="post" action="/writeMemo" id="notice_write_form">
-      <div class="write_list">
+      <div class="write_list p40">
         <ul>
           <li>
             <label for="write_list_name">작성자</label>
@@ -18,17 +18,16 @@
           </li>
         </ul>
       </div>
-      <div class="write_memo" style="white-space:pre-wrap;" >
-        <!--  cols="30" rows="5" -->
+      <div class="write_memo" style="white-space:pre-wrap;">
         <textarea name="write_memo_cont"></textarea>
       </div>
-      <div class="write_file_wrap">
+      <div class="write_file_wrap p40">
         <label for="write_file">첨부파일</label>
         <input type="file" name="write_file" id="write_file">
       </div>
       <div class="notice_write_btn"> 
-        <input type="submit" value="확인" id="notice_write_check" onclick="javascript:location.href='/notice_write'">
-        <input type="reset" value="취소" id="notice_write_reset" onclick="javascript:location.href='/notice_list'">
+        <button type="submit" value="확인" id="notice_write_check" onclick="javascript:location.href='/notice_write'">확인</button>
+        <button type="reset" value="취소" id="notice_write_reset" onclick="javascript:location.href='/notice_list'">취소</button>
       </div>
     </form>
   </div>
