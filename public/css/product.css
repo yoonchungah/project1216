@@ -29,24 +29,26 @@
 .sub_pro_menu{
   position: sticky;
   top:0px; left: 0;
-  
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
-/* 추가한 부분 */
-.scroll-menu {
-  background-color: rgba(255, 255, 255, 1);
+.sub_pro_menu.scroll-menu{
+  backdrop-filter: blur(30px);
 }
-
 .sub_pro_menu>ul{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .sub_pro_menu a{
   text-decoration: none;
   color: #000;
   font-weight: bold;
   margin-right: 100px;
-  line-height: 50px;
-  font-size: 18px;
+  font-size: 18px; 
+}
+.sub_pro_menu a{
+  margin-right: 0;
 }
 
 /*서브페이지 프로덕트 제품 */
@@ -162,11 +164,13 @@
   /* 서브페이지 프로덕트 메뉴 */
   .sub_pro_menu_wrap{
     margin-top: 70px;
-  } 
+  }
+  .sub_pro_menu{
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
   .sub_pro_menu a{
     font-size: 16px;
-    line-height: 40px;
-    margin-right: 50px;
   }
 
 }
@@ -189,7 +193,6 @@
     padding-bottom: 60px;
   }
   .sub_pro_menu a{
-    line-height: 30px;
     margin-right: 25px;
   }
 }
@@ -203,6 +206,10 @@
     font-size: 14px;
   }
   /* 프로덕트메뉴 */
+  .sub_pro_menu{
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
   .sub_pro_menu a{
     font-size: 14px;
     margin-right: 20px;
@@ -226,5 +233,8 @@
   /* 프로덕트메뉴 */
   .sub_pro_menu{
     display: none;
+  }
+  #sp_ball{
+    padding-top: 10%;
   }
 }

@@ -96,7 +96,7 @@ router.get('/notice_viewer', (req, res) => {
 });
 
 
-//집
+
 //공지 수정 페이지 연결
 router.post('/updates',(req,res)=>{
   let param = JSON.parse(JSON.stringify(req.body));
@@ -132,8 +132,6 @@ router.get('/deleteM',(req, res) => {
 
 
 
-
-//1213 썸네일 페이지
 //저장 공간 확보
 const upload = multer({
   storage:multer.diskStorage({

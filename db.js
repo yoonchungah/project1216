@@ -98,7 +98,6 @@ function insertproduct(thumpro_img,thumpro_name,thumpro_tag,thumpro_price,callba
   })
 }
 
-//1214
 //id 일치하는 데이터 추출
 function getproByid(id, callback){
   connection.query(`SELECT * FROM product1 WHERE id = ${id}`, (err,rows)=>{
