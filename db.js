@@ -1,21 +1,21 @@
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host     : '127.0.0.1',
-  user     : 'root',
-  password : '1234',
-  database : 'eri',
-  dateStrings : 'date'
-});
-
 // var mysql      = require('mysql');
 // var connection = mysql.createConnection({
-//   host     : 'database-1.cedxt1puu3qa.ap-northeast-2.rds.amazonaws.com',
+//   host     : '127.0.0.1',
 //   user     : 'root',
-//   password : 'victory7',
+//   password : '1234',
 //   database : 'eri',
-//   dateStrings : 'date', //날짜 시간 출력
-//   // multipleStatements: ture
+//   dateStrings : 'date'
 // });
+
+var mysql      = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'database-1.cbt0ajlvu182.ap-northeast-2.rds.amazonaws.com',
+  user     : 'root',
+  password : '12345eri',
+  database : 'eri',
+  dateStrings : 'date', //날짜 시간 출력
+  // multipleStatements: ture
+});
 
 
 connection.connect(function(err){
