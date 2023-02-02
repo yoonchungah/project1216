@@ -10,7 +10,7 @@
     </ul>
     <% rows.forEach((row,index)=>{  %>
     <ul class="notice_list_cont" onclick="javascript:location.href='/notice_viewer?num=<%= row.num %>'">
-      <li class="noti_num"><%= row.num +1 %></li>
+      <li class="noti_num"><%= row.num %></li>
       <li class="noti_title"><%= row.title %></li>
       <li class="noti_write"><%= row.wirte %></li>
       <li class="noti_day"><%= row.Date %></li>
